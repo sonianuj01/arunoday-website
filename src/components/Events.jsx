@@ -1,6 +1,6 @@
 import { Calendar, MapPin, Users, Award } from 'lucide-react';
 import { Card, CardContent } from './ui/Card.jsx'
-import Badge  from './ui/badge';
+import Badge  from './ui/Badge.jsx';
 
 
 const Events = () => {
