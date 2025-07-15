@@ -11,7 +11,7 @@ const Sponsors = () => {
   ];
 
   return (
-    <section className="py-20 bg-card relative overflow-hidden">
+    <section className="py-20 bg-card relative overflow-hidden bg-black">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
@@ -29,16 +29,16 @@ const Sponsors = () => {
           {sponsors.map((sponsor, index) => (
             <div
               key={index}
-              className="aspect-square bg-card-gradient border border-border rounded-2xl flex flex-col items-center justify-center p-4 hover:shadow-glow transition-all duration-300 hover:scale-110 group animate-float"
+              className="aspect-square bg-card-gradient  border border-border rounded-2xl flex flex-col items-center justify-center p-4 hover:shadow-glow transition-all duration-300 hover:scale-110 group animate-float"
               style={{ 
                 animationDelay: `${index * 0.1}s`,
                 animationDuration: `${3 + (index % 3)}s`
               }}
             >
-              <div className="text-4xl mb-2 group-hover:scale-125 transition-transform duration-300">
+              <div className="text-4xl mb-2 group-hover:scale-125 transition-transform duration-100">
                 {sponsor.logo}
               </div>
-              <div className="text-xs font-medium text-muted-foreground group-hover:text-gold transition-colors duration-300 text-center">
+              <div className="text-xs font-medium text-muted-foreground group-hover:text-gold transition-colors duration-100 text-center">
                 {sponsor.name}
               </div>
             </div>

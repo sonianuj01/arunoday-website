@@ -25,12 +25,13 @@ const Navbar = () => {
     'CONTACT US'
   ];
 
-  const socialLinks = [
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' }
-  ];
+ const socialLinks = [
+  { icon: Twitter, href: '#', label: 'Twitter', color: 'text-blue-100 hover:text-blue-400' },
+  { icon: Facebook, href: '#', label: 'Facebook', color: 'text-blue-700 hover:text-blue-500' },
+  { icon: Instagram, href: '#', label: 'Instagram', color: 'text-pink-500 hover:text-pink-500' },
+  { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'text-blue-600 hover:text-blue-500' },
+];
+
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
@@ -72,11 +73,11 @@ const Navbar = () => {
 
           {/* Social Links - Desktop */}
           <div className="hidden lg:flex items-center space-x-4">
-            {socialLinks.map(({ icon: Icon, href, label }) => (
+            {socialLinks.map(({ icon: Icon, href, label , color }) => (
               <a
                 key={label}
                 href={href}
-                className="text-foreground hover:text-gold transition-colors duration-300 p-2"
+                className={`text-foreground hover:${color} transition-colors duration-300 p-2`}
                 aria-label={label}
               >
                 <Icon size={20} />

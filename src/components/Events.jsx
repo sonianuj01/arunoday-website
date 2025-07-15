@@ -49,7 +49,7 @@ const Events = () => {
   ];
 
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
+    <section className="py-20 bg-background relative overflow-hidden bg-black">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
@@ -67,7 +67,7 @@ const Events = () => {
           {pastEvents.map((event, index) => (
             <Card 
               key={index}
-              className="bg-card-gradient border-border hover:shadow-glow transition-all duration-500 hover:scale-[1.02] group animate-slide-in-left overflow-hidden"
+              className="bg-card-gradient border-border hover:shadow-glow transition-all duration-100 hover:scale-[1.02] group animate-slide-in-left overflow-hidden"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-0">

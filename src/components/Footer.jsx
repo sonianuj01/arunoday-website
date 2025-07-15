@@ -20,11 +20,11 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' }
-  ];
+  { icon: Twitter, href: '#', label: 'Twitter', color: 'text-blue-100 hover:text-blue-400' },
+  { icon: Facebook, href: '#', label: 'Facebook', color: 'text-blue-700 hover:text-blue-500' },
+  { icon: Instagram, href: '#', label: 'Instagram', color: 'text-pink-100 hover:text-pink-500' },
+  { icon: Linkedin, href: '#', label: 'LinkedIn', color: 'text-blue-600 hover:text-blue-500' },
+];
 
   return (
     <footer className="bg-navy-dark border-t border-border">
@@ -153,11 +153,11 @@ const Footer = () => {
 
             {/* Social Links */}
             <div className="flex items-center space-x-4">
-              {socialLinks.map(({ icon: Icon, href, label }) => (
+              {socialLinks.map(({ icon: Icon, href, label , color }) => (
                 <a
                   key={label}
                   href={href}
-                  className="text-muted-foreground hover:text-gold transition-colors duration-300 p-2"
+                  className={`text-muted-foreground ${color} transition-colors duration-300 p-2`}
                   aria-label={label}
                 >
                   <Icon size={20} />

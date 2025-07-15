@@ -20,7 +20,7 @@ const Gallery = () => {
   ];
 
   return (
-    <section className="py-20 bg-card relative overflow-hidden">
+    <section className="py-20 bg-card relative overflow-hidden bg-black ">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
@@ -38,11 +38,11 @@ const Gallery = () => {
           <div 
             ref={scrollRef}
             className="flex animate-scroll hover:animation-paused"
-            style={{
-              width: `${images.length * 400}px`
+           style={{
+             width: `${images.length * 400}px`
             }}
           >
-            {images.map((image, index) => (
+            {[...images, ...images].map((image, index) => (
               <div
                 key={index}
                 className="w-80 h-96 flex-shrink-0 mx-4 relative group"

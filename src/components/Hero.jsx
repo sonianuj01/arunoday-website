@@ -38,7 +38,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             size="lg" 
-            className="bg-gold text-gold-foreground hover:bg-gold/90 px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-glow"
+            className="bg-gold text-gold-foreground hover:bg-gold/90 px-8 py-6 text-lg font-semibold transition-all duration-300 hover:scale-105 "
           >
             Join E-Summit '25
           </Button>
