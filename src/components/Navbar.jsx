@@ -45,7 +45,7 @@ const Navbar = () => {
         ? 'bg-navy-dark/95 backdrop-blur-md py-2 shadow-elegant'
         : 'bg-transparent py-6'
     }`}>
-      <div className="container mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
@@ -67,7 +67,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             {navItems.map(({ label, target }) =>
               target === 'team' ? (
                 <Link
@@ -92,7 +92,7 @@ const Navbar = () => {
           </div>
 
           {/* Social Links - Desktop */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4">
             {socialLinks.map(({ icon: Icon, href, label, color }) => (
               <a
                 key={label}
@@ -109,7 +109,7 @@ const Navbar = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="lg:hidden text-foreground"
+            className="md:hidden text-foreground"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -118,7 +118,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-navy-dark/95 backdrop-blur-md border-t border-border animate-fade-in">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-navy-dark/95 backdrop-blur-md border-t border-border animate-fade-in">
             <div className="flex flex-col space-y-4 p-6">
               {navItems.map(({ label, target }) =>
                 target === 'team' ? (

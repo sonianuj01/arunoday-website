@@ -22,7 +22,7 @@ import deepanshu from '../assets/deepanshu.jpg';
 import ashmit from '../assets/ashmit.jpg';
 import priyanshuP from '../assets/priyanshuP.jpg';
 import shivanshu from '../assets/shivanshu.jpg';
-import mukul from '../assets/mukul.jpg';
+import mukul from '../assets/Mukul.jpg';
 import darsh from '../assets/darsh.jpg';
 import hardik from '../assets/hardik.jpg';
 import anik from '../assets/anik.jpg';
@@ -35,14 +35,21 @@ import tanishq from '../assets/tanishq.jpg';
 import daksh from '../assets/daksh.jpg';
 import anuj from '../assets/anuj.jpg';
 import adish from '../assets/adish.jpg';
+import sonal from '../assets/sonal.jpg';
 
 
 
 const Members = () => {
+    const faculty = [
+        { name: "Sonal Chandel", logo: sonal, description:"Faculty Incharge",email:"sonalchandel@iiitbhopal.ac.in" }
+    ];
+    const foundingMember = [
+        { name: "Saumya Tiwari", logo: saumya, description:"Co-Founder"},
+        { name: "Harshvardhan Singh Chauhan", logo: HarshVardhan, description: "Founder" },
+        { name: "Priyanshu Gupta", logo: priyanshu, description:"Co-Founder" },
+    ];
+
     const Members = [
-        { name: "Harshvardhan Singh Chauhan", logo: HarshVardhan },
-        { name: "Saumya Tiwari", logo: saumya },
-        { name: "Priyanshu Gupta", logo: priyanshu },
         { name: "Shubham Singh", logo: shubham },
         { name: "Arvind Yadav", logo: arvind },
         { name: "Pramod Tejra", logo: pramod },
@@ -77,7 +84,56 @@ const Members = () => {
     ];
 
     return (
-        <div className="bg-black py-10 px-4">
+        <div className="bg-black py-10 px-4 ">
+            {/* faculty-section */}
+            <div className="flex justify-center mb-8">
+                {faculty.map((member, index) => (
+                    <Card
+                        key={index}
+                        className="w-full max-w-sm bg-card-gradient border border-border hover:shadow-glow transition-all duration-300 hover:scale-105 animate-slide-in-right flex flex-col items-center justify-between"
+                        style={{ animationDelay: `${index * 0.1}s`, height: '100%' }}
+                    >
+                        <CardContent className="p-6 text-center flex flex-col items-center justify-center h-full">
+                            <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
+                                <img
+                                    src={member.logo}
+                                    alt={member.name}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
+                            <h4 className="text-base text-muted-foreground">({member.description})</h4>
+                            <h5 className="text-base text-muted-foreground">({member.email})</h5>
+                        </CardContent>
+                    </Card>
+                ))}
+            </div>
+
+            {/* founding member section */}
+            <div className="flex justify-center mb-8">
+                {foundingMember.map((member, index) => (
+                    <Card
+                        key={index}
+                        className="w-full max-w-sm bg-card-gradient border border-border hover:shadow-glow transition-all duration-300 hover:scale-105 animate-slide-in-right flex flex-col items-center justify-between mx-auto"
+                        style={{ animationDelay: `${index * 0.1}s`, height: '100%' }}
+                    >
+                        <CardContent className="p-6 text-center flex flex-col items-center justify-center h-full">
+                            <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
+                                <img
+                                    src={member.logo}
+                                    alt={member.name}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
+                            <h6 className="text-base text-muted-foreground">({member.description})</h6>
+                        </CardContent>
+                    </Card>
+                ))}
+            </div>
+
+
+            {/* Active Member Section */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {Members.map((member, index) => (
                     <Card
