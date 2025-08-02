@@ -22,7 +22,7 @@ import deepanshu from '../assets/deepanshu.jpg';
 import ashmit from '../assets/ashmit.jpg';
 import priyanshuP from '../assets/priyanshuP.jpg';
 import shivanshu from '../assets/shivanshu.jpg';
-import mukul from '../assets/mukul.jpg';
+import mukul from '../assets/Mukul.jpg';
 import darsh from '../assets/darsh.jpg';
 import hardik from '../assets/hardik.jpg';
 import anik from '../assets/anik.jpg';
