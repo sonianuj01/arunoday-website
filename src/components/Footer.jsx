@@ -1,5 +1,5 @@
 import { Mail, Phone, MapPin, Twitter, Facebook, Instagram, Linkedin, Heart } from 'lucide-react';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo1.png';
 
 const Footer = () => {
   const quickLinks = [
@@ -12,11 +12,13 @@ const Footer = () => {
   ];
 
   const events = [
-    'E-Summit 2025',
-    'Startup Bootcamp',
-    'Innovation Challenge',
-    'Pitch Competition',
-    'Mentorship Program'
+    'Hindi Diwas',
+    'Blood Donation Drive',
+    'Candle March',
+    'Seva Sangam',
+    'Alumni Talk',
+    'Gudi Padwa',
+    'Nukkad Natak',
   ];
 
   const socialLinks = [
@@ -36,13 +38,12 @@ const Footer = () => {
             <div className="flex items-center space-x-3 mb-6">
               <img src={logo} alt="E-Cell MANIT" className="w-12 h-12" />
               <div className="text-foreground font-bold">
-                <div className="text-lg">E-CELL</div>
-                <div className="text-sm text-muted-foreground">MANIT BHOPAL</div>
+                <div className="text-lg">Arunoday</div>
+                <div className="text-sm text-muted-foreground">IIIT BHOPAL</div>
               </div>
             </div>
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Empowering the next generation of entrepreneurs through innovation, 
-              mentorship, and community building at MANIT Bhopal.
+              Empowering the next generation of change-makers through cultural expression, social awareness, and community-driven initiatives at IIIT Bhopal.
             </p>
             <div className="text-gold font-medium text-lg">
               #makethingshappen
@@ -90,27 +91,27 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-gold mt-1 flex-shrink-0" />
                 <div className="text-muted-foreground">
-                  <div>Maulana Azad National Institute</div>
-                  <div>of Technology, Bhopal</div>
+                  <div>Indian Institute of Information</div>
+                  <div> Technology, Bhopal</div>
                   <div>Madhya Pradesh, India - 462003</div>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gold" />
                 <a 
-                  href="mailto:ecell@manit.ac.in" 
+                  href="mailto:anujsonist01@gmail.com" 
                   className="text-muted-foreground hover:text-gold transition-colors duration-300"
                 >
-                  ecell@manit.ac.in
+                  arunoday@iiitbhopal.ac.in
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-gold" />
                 <a 
-                  href="tel:+917554001234" 
+                  href="tel:+917307536651" 
                   className="text-muted-foreground hover:text-gold transition-colors duration-300"
                 >
-                  +91 755 400 1234
+                  +91 73075-36651
                 </a>
               </div>
             </div>
@@ -146,7 +147,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-muted-foreground text-sm flex items-center">
-              © 2024 E-Cell MANIT Bhopal. Made with 
+              © 2024 Arunoday IIIT Bhopal. Made with 
               <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" />
               by our team.
             </div>

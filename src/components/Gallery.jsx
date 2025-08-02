@@ -1,22 +1,28 @@
 import { useEffect, useRef } from 'react';
-import gallery1 from '../assets/gallery-1.jpeg';
-import gallery2 from '../assets/gallery-2.jpg';
-import gallery3 from '../assets/gallery-3.jpg';
-import gallery4 from '../assets/gallery-4.png';
+import gallery1 from '../assets/BD1.jpg';
+import gallery2 from '../assets/BD2.jpg';
+import gallery3 from '../assets/CD1.jpg';
+import gallery4 from '../assets/CM1.jpg';
+import gallery5 from '../assets/CM2.jpg';
+import gallery6 from '../assets/CM3.jpg';
+import gallery7 from '../assets/GP1.jpg';
+import gallery8 from '../assets/NN1.jpg';
+import gallery9 from '../assets/NN2.jpg';
 
 const Gallery = () => {
   const scrollRef = useRef(null);
 
 
   const images = [
-    { src: gallery1, alt: "Entrepreneurship Event 1" },
-    { src: gallery2, alt: "Business Summit" },
-    { src: gallery3, alt: "Innovation Workshop" },
-    { src: gallery4, alt: "Startup Competition" },
-    { src: gallery1, alt: "Networking Event" },
-    { src: gallery2, alt: "Tech Conference" },
-    { src: gallery3, alt: "Mentorship Program" },
-    { src: gallery4, alt: "Award Ceremony" },
+    { src: gallery1, alt: "Blood Donation" },
+    { src: gallery2, alt: "Blood Donation" },
+    { src: gallery3, alt: "Cloth Donation Drive" },
+    { src: gallery4, alt: "Candle March" },
+    { src: gallery5, alt: "Candle March" },
+    { src: gallery6, alt: "Candle March" },
+    { src: gallery7, alt: "Gudi Padwa" },
+    { src: gallery8, alt: "Nukkad Natak" },
+    { src: gallery9, alt: "Nukkad Natak" },
   ];
 
   return (
@@ -28,8 +34,7 @@ const Gallery = () => {
             Our <span className="text-gold">Gallery</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Capturing moments of innovation, collaboration, and entrepreneurial excellence 
-            from our events and activities.
+            Capturing moments of cultural unity, social impact, and collaborative spirit from our vibrant events and initiatives.
           </p>
         </div>
 
@@ -58,7 +63,7 @@ const Gallery = () => {
                       {image.alt}
                     </h3>
                     <p className="text-muted-foreground text-sm">
-                      Memorable moments from our entrepreneurship journey
+                      Memorable moments from our impactful journey
                     </p>
                   </div>
                 </div>
@@ -72,7 +77,7 @@ const Gallery = () => {
         </div>
 
         {/* Gallery Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           {[
             {
               title: "Photo Gallery",
@@ -106,7 +111,7 @@ const Gallery = () => {
               </p>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* Background decoration */}

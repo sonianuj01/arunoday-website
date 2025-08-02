@@ -6,22 +6,22 @@ const About = () => {
     {
       icon: Target,
       title: "Mission",
-      description: "To foster entrepreneurial spirit and innovation among students, creating tomorrow's business leaders."
+      description: "To inspire social responsibility, cultural awareness, and active citizenship among students through meaningful events and initiatives."
     },
     {
       icon: Users,
       title: "Community",
-      description: "Building a vibrant ecosystem of entrepreneurs, mentors, and industry experts working together."
+      description: "To nurture a strong, inclusive community built on collaboration, empathy, and shared purpose."
     },
     {
       icon: Lightbulb,
       title: "Innovation",
-      description: "Encouraging creative thinking and breakthrough solutions to real-world problems."
+      description: "To encourage creative thinking and novel solutions that drive positive change."
     },
     {
       icon: Trophy,
       title: "Excellence",
-      description: "Striving for excellence in all our endeavors and celebrating entrepreneurial achievements."
+      description: "To uphold the highest standards in all pursuits, inspiring continual growth and achievement."
     }
   ];
 
@@ -31,17 +31,17 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            About <span className="text-gold">E-Cell MANIT</span>
+            About <span className="text-gold">Arunoday IIIT-Bhopal</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            The Entrepreneurship Cell at MANIT Bhopal is a student-driven organization dedicated to 
-            promoting entrepreneurship and innovation. We provide a platform for budding entrepreneurs 
-            to learn, network, and transform their ideas into successful ventures.
+            The Arunoday Club at IIIT Bhopal actively fosters cultural, social, and civic engagement through impactful events such as Hindi Diwas celebrations, awareness marches, and street plays.
+            From organizing poetry recitations and blood donation drives to performing thought-provoking Nukkad Nataks, the club nurtures social consciousness and inclusivity on campus.
+            Its diverse initiatives consistently promote national values, community welfare, and cultural heritage among students and staff alike.
           </p>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+        {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
           {[
             { number: "500+", label: "Active Members" },
             { number: "50+", label: "Events Organized" },
@@ -61,7 +61,7 @@ const About = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -90,10 +90,10 @@ const About = () => {
         <div className="text-center mt-16 animate-fade-in">
           <div className="bg-card-gradient rounded-2xl p-8 max-w-4xl mx-auto border border-border">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Ready to Start Your Entrepreneurial Journey?
+              Ready to Start Your social Journey?
             </h3>
             <p className="text-muted-foreground mb-6">
-              Join our community of innovators and transform your ideas into reality.
+              Join our social welfare community.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-gold text-gold-foreground px-8 py-3 rounded-lg font-semibold hover:bg-gold/90 transition-all duration-300 hover:scale-105">

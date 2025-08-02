@@ -1,51 +1,110 @@
 import { Calendar, MapPin, Users, Award } from 'lucide-react';
 import { Card, CardContent } from './ui/Card.jsx'
 import Badge  from './ui/Badge.jsx';
+import ArunodayImpact from './ArunodayImpact.jsx';
 
 
 const Events = () => {
   // Array of past events
   const pastEvents = [
     {
-      title: "E-Summit 2024",
-      date: "March 15-17, 2024",
-      location: "MANIT Campus",
-      participants: "2000+",
-      description: "Our flagship entrepreneurship summit featuring renowned speakers, startup competitions, and networking opportunities.",
-      highlights: ["Startup Pitch Competition", "Industry Speaker Sessions", "Investor Meet", "Innovation Expo"],
+      title: "Blood Donation drive",
+      date: "March 2, 2024",
+      location: "LRC Ground",
+      participants: "200+",
+      description: "First ever blood donation drive in IIIT and MANIT Bhopal",
+      highlights: [
+                    "🩸 Blood Donation Drive",
+                    "Donor Registration",
+                    "Health Check-up Camp",
+                    "Life-Saving Contributions",
+                    "Volunteering for a Cause"
+                  ],
       status: "completed",
-      image: "🚀"
+      image: "🩸"
     },
     {
-      title: "Innovation Challenge",
-      date: "January 20, 2024",
-      location: "Main Auditorium",
-      participants: "500+",
-      description: "A 48-hour hackathon focused on solving real-world problems through innovative technology solutions.",
-      highlights: ["48-hour Hackathon", "Mentorship Sessions", "Prize Pool ₹2L", "Industry Partnerships"],
-      status: "completed",
-      image: "💡"
-    },
-    {
-      title: "Startup Bootcamp",
-      date: "November 10-12, 2023",
-      location: "E-Cell Hub",
+      title: "Candle March",
+      date: "August 16, 2024",
+      location: "Nehru Nagar to MANIT-Square",
       participants: "300+",
-      description: "Intensive 3-day workshop covering all aspects of starting and scaling a business venture.",
-      highlights: ["Business Model Canvas", "Financial Planning", "Market Research", "Pitch Training"],
+      description: "A solemn candle march organized to honor the victims of the Kolkata rape case and raise awareness against gender-based violence.",
+      highlights: [
+                    "🕯️ Silent Protest March",
+                    "Solidarity for Victims",
+                    "Raising Awareness on Gender-Based Violence",
+                    "Student and Faculty Participation",
+                    "Advocating for Justice and Safety"
+                  ],
       status: "completed",
-      image: "📈"
+      image: "🕯️",
     },
     {
-      title: "Women Entrepreneurship Day",
-      date: "September 8, 2023",
-      location: "Conference Hall",
-      participants: "400+",
-      description: "Celebrating and empowering women entrepreneurs with inspirational talks and success stories.",
-      highlights: ["Women Leader Panel", "Success Stories", "Networking Session", "Mentorship Program"],
+      title: "Seva-Sangam",
+      date: "January 31, 2025",
+      location: "Vaishali-Nagar",
+      participants: "100+",
+      description: "A compassionate initiative to collect and donate clothes to the underprivileged, promoting kindness and social responsibility.",
+      highlights: [
+                    "🧥 Cloth Collection Drive",
+                    "Donations from Students & Staff",
+                    "Promoting Sustainable Giving",
+                    "Spreading Warmth and Kindness",
+                    "Uplifting the Underserved Communities"
+                  ]
+,
       status: "completed",
-      image: "👩‍💼"
+      image: "🧣"
+    },
+    {
+      title: "Alumni-Talk",
+      date: "February 10, 2025",
+      location: "New-Teaching-Block, MANIT-Campus",
+      participants: "400+ students & 10+ Alumni",
+      description: "An inspiring session where distinguished alumni shared their experiences, insights, and guidance with current students.",
+      highlights: [
+                    "🎤 Interactive Alumni Session",
+                    "Career & Industry Insights",
+                    "Real-world Experiences Shared",
+                    "Student-Alumni Networking",
+                    "Guidance on Career Growth and Opportunities"
+                  ],
+      status: "completed",
+      image: "🎤"
+    },
+    {
+      title: "Gudi-Padwa",
+      date: "April 3, 2025",
+      location: "New-Teaching-Block, MANIT-Campus",
+      participants: "400+ students & 30+ Faculties & Guests",
+      description: "A vibrant celebration of Gudi Padwa that brought together the IIIT Bhopal community to honor tradition and culture.",
+      highlights: [
+                    "🎊 Traditional Gudi Setup",
+                    "Bharat Mata Aarti",
+                    "Cultural speech by cheif guests and faculty members",
+                    "Traditional Dress and Decor",
+                    "Celebrating the Marathi New Year Together"
+                  ],
+      status: "completed",
+      image: "🎊"
+    },
+    {
+      title: "Nukkad-Natak",
+      date: "April 17, 2025",
+      location: "Civil Auditorium, MANIT Campus",
+      participants: "400+ students & 30+ Faculties & Guests",
+      description: "A powerful street play performed to highlight the social evils of corruption and encourage civic accountability.",
+      highlights:[
+                    "🎭 Street Play on Corruption",
+                    "Realistic and Impactful Performance",
+                    "Public Awareness through Theatre",
+                    "Youth-led Social Commentary",
+                    "Call for Transparency and Justice"
+                  ],
+      status: "completed",
+      image: "🎭"
     }
+
   ];
 
   return (
@@ -57,8 +116,7 @@ const Events = () => {
             Past <span className="text-gold">Events</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Explore our journey through impactful events that have shaped the entrepreneurial 
-            landscape at MANIT and beyond.
+            Explore our journey through impactful initiatives that have shaped social awareness and cultural vibrancy at IIIT Bhopal and beyond.
           </p>
         </div>
 
@@ -129,35 +187,7 @@ const Events = () => {
         </div>
 
         {/* Event Impact Stats */}
-        <div className="bg-card-gradient rounded-2xl p-8 border border-border">
-          <h3 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-8">
-            Our Event Impact
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { number: "50+", label: "Events Organized", icon: Calendar },
-              { number: "5000+", label: "Total Participants", icon: Users },
-              { number: "₹50L+", label: "Prize Money Distributed", icon: Award },
-              { number: "100+", label: "Industry Partners", icon: MapPin }
-            ].map((stat, index) => (
-              <div 
-                key={index}
-                className="text-center animate-slide-in-right"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <stat.icon className="w-8 h-8 text-gold" />
-                </div>
-                <div className="text-2xl md:text-3xl font-bold text-gold mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-muted-foreground text-sm">
-                  {stat.label}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        <ArunodayImpact/>
       </div>
 
       {/* Background decoration */}
