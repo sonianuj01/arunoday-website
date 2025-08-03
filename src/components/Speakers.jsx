@@ -6,6 +6,7 @@ import HarshVardhan from '../assets/harshVardhan.jpg';
 import AshutoshSingh from '../assets/ashutoshSingh.jpg';
 import dhramendra from '../assets/dharmendraSonakiya.jpg';
 import aditya from '../assets/aditya.jpg';
+import aashish from '../assets/aashishParihar.jpg';
 
 
 
@@ -19,7 +20,8 @@ const Speakers = () => {
     { name: "Tanav Bajaj", logo: tanav },
     { name: "Priyanshu Gupta", logo: priyanshu },
     { name: "Harshvardhan Singh Chauhan", logo: HarshVardhan },
-    { name: "Proff. Ashutosh Singh", logo: AshutoshSingh },
+    // { name: "Proff. Ashutosh Singh", logo: AshutoshSingh },
+    { name: "Dr. Aashish Parihar", logo: aashish },
     { name: "Dharmendra Sonakiya", logo: dhramendra },
     { name: "Saumya Tiwari", logo: saumya },
     { name: "Vikas Kaushik", logo: vikas },

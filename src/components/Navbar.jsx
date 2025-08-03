@@ -33,7 +33,7 @@ const Navbar = () => {
     },
     {
       icon: Mail,
-      href: '#',
+      href: 'mailto:arunodayiiitb@gmail.com',
       label: 'LinkedIn',
       color: 'text-blue-600 hover:text-blue-500'
     }

@@ -99,19 +99,19 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gold" />
                 <a 
-                  href="mailto:anujsonist01@gmail.com" 
+                  href="mailto:arunodayiiitb@gmail.com" 
                   className="text-muted-foreground hover:text-gold transition-colors duration-300"
                 >
-                  arunoday@iiitbhopal.ac.in
+                  arunodayiiitb@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-gold" />
                 <a 
-                  href="tel:+917307536651" 
+                  href="tel:+917988700736" 
                   className="text-muted-foreground hover:text-gold transition-colors duration-300"
                 >
-                  +91 73075-36651
+                  +91 7988700736
                 </a>
               </div>
             </div>
@@ -147,7 +147,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <div className="text-muted-foreground text-sm flex items-center">
-              © 2024 Arunoday IIIT Bhopal. Made with 
+              © Arunoday IIIT Bhopal. Made with 
               <Heart className="w-4 h-4 mx-1 text-red-500 fill-current" />
               by our team.
             </div>

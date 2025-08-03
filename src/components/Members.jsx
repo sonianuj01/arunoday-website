@@ -41,12 +41,12 @@ import sonal from '../assets/sonal.jpg';
 
 const Members = () => {
     const faculty = [
-        { name: "Sonal Chandel", logo: sonal, description:"Faculty Incharge",email:"sonalchandel@iiitbhopal.ac.in" }
+        { name: "Dr. Sonal Telang Chandel", logo: sonal, description: "Faculty Incharge", email: "sonalchandel@iiitbhopal.ac.in" }
     ];
     const foundingMember = [
-        { name: "Saumya Tiwari", logo: saumya, description:"Co-Founder"},
+        { name: "Saumya Tiwari", logo: saumya, description: "Co-Founder" },
         { name: "Harshvardhan Singh Chauhan", logo: HarshVardhan, description: "Founder" },
-        { name: "Priyanshu Gupta", logo: priyanshu, description:"Co-Founder" },
+        { name: "Priyanshu Gupta", logo: priyanshu, description: "Co-Founder" },
     ];
 
     const Members = [
@@ -108,13 +108,12 @@ const Members = () => {
                     </Card>
                 ))}
             </div>
-
-            {/* founding member section */}
-            <div className="flex justify-center mb-8">
+            {/* Founding member section */}
+            <div className="flex flex-wrap justify-center gap-6 mb-8">
                 {foundingMember.map((member, index) => (
                     <Card
                         key={index}
-                        className="w-full max-w-sm bg-card-gradient border border-border hover:shadow-glow transition-all duration-300 hover:scale-105 animate-slide-in-right flex flex-col items-center justify-between mx-auto"
+                        className="w-full sm:w-80 bg-card-gradient border border-border hover:shadow-glow transition-all duration-300 hover:scale-105 animate-slide-in-right flex flex-col items-center justify-between"
                         style={{ animationDelay: `${index * 0.1}s`, height: '100%' }}
                     >
                         <CardContent className="p-6 text-center flex flex-col items-center justify-center h-full">
@@ -131,6 +130,7 @@ const Members = () => {
                     </Card>
                 ))}
             </div>
+
 
 
             {/* Active Member Section */}
