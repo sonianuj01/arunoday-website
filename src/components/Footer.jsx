@@ -119,7 +119,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="mt-12 pt-8 border-t border-border">
+        {/* <div className="mt-12 pt-8 border-t border-border">
           <div className="max-w-md mx-auto text-center">
             <h3 className="text-foreground font-semibold text-lg mb-4">
               Stay Updated
@@ -138,7 +138,7 @@ const Footer = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Bottom Footer */}
