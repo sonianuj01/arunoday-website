@@ -164,7 +164,7 @@ const Members = () => {
                 style={{
                     textShadow: '0 0 30px rgba(234, 179, 8, 1)',
                 }}>
-                Batch-25</h1>
+                Batch'25</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
                 {Members.map((member, index) => (
                     <Card
@@ -193,7 +193,7 @@ const Members = () => {
                 style={{
                     textShadow: '0 0 30px rgba(234, 179, 8, 1)',
                 }}>
-                Batch-26</h1>
+                Batch'26</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
                 {batch26.map((member, index) => (
                     <Card
@@ -221,7 +221,7 @@ const Members = () => {
                 style={{
                     textShadow: '0 0 30px rgba(234, 179, 8, 1)',
                 }}>
-                Batch-27</h1>
+                Batch'27</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
                 {batch27.map((member, index) => (
                     <Card
@@ -249,7 +249,7 @@ const Members = () => {
                 style={{
                     textShadow: '0 0 30px rgba(234, 179, 8, 1)',
                 }}>
-                Batch-28</h1>
+                Batch'28</h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
                 {batch28.map((member, index) => (
                     <Card

@@ -21,7 +21,7 @@ const Speakers = () => {
     { name: "Priyanshu Gupta", logo: priyanshu },
     { name: "Harshvardhan Singh Chauhan", logo: HarshVardhan },
     // { name: "Proff. Ashutosh Singh", logo: AshutoshSingh },
-    { name: "Dr. Aashish Parihar", logo: aashish },
+    // { name: "Dr. Aashish Parihar", logo: aashish },
     { name: "Dharmendra Sonakiya", logo: dhramendra },
     { name: "Saumya Tiwari", logo: saumya },
     { name: "Vikas Kaushik", logo: vikas },
