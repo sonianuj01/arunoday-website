@@ -54,6 +54,10 @@ const Members = () => {
         { name: "Arvind Yadav", logo: arvind },
         { name: "Pramod Tejra", logo: pramod },
         { name: "Akshay Patidar", logo: akshay },
+
+    ];
+
+    const batch26 = [
         { name: "Vikas Kaushik", logo: vikas },
         { name: "Ronak Nayak", logo: ronak },
         { name: "Pankaj Gupta", logo: pankaj },
@@ -61,6 +65,10 @@ const Members = () => {
         { name: "Mohan Kashyap", logo: mohan },
         { name: "Suyash Nagar", logo: suyash },
         { name: "Khusbu Jamliya", logo: khusboo },
+
+    ];
+
+    const batch27 = [
         { name: "Anmol Rajpoot", logo: anmol },
         { name: "Anuj Verma", logo: anuj },
         { name: "Harsh Goyal", logo: harsh },
@@ -71,6 +79,10 @@ const Members = () => {
         { name: "Shivanshu Mishra", logo: shivanshu },
         { name: "Mukul Bhardwaj", logo: mukul },
         { name: "Darsh Dave", logo: darsh },
+
+    ];
+
+    const batch28 = [
         { name: "Hardik Agrawal", logo: hardik },
         { name: "Anik Aryan", logo: anik },
         { name: "Gaurav Yadav", logo: gaurav },
@@ -86,7 +98,12 @@ const Members = () => {
     return (
         <div className="bg-black py-10 px-4 ">
             {/* faculty-section */}
-            <div className="flex justify-center mb-8">
+            <h1 className='text-black text-[6rem] font-extrabold text-foreground mb-8 text-center'
+                style={{
+                    textShadow: '0 0 30px rgba(234, 179, 8, 1)',
+                }}>
+                Faculty Incharge</h1>
+            <div className="flex justify-center mb-16">
                 {faculty.map((member, index) => (
                     <Card
                         key={index}
@@ -108,8 +125,17 @@ const Members = () => {
                     </Card>
                 ))}
             </div>
+
+            
+
+            
             {/* Founding member section */}
-            <div className="flex flex-wrap justify-center gap-6 mb-8">
+            <h1 className='text-black text-[6rem] font-extrabold text-foreground mb-8 text-center'
+                style={{
+                    textShadow: '0 0 30px rgba(234, 179, 8, 1)',
+                }}>
+                Founding Members</h1>
+            <div className="flex flex-wrap justify-center gap-6 mb-16">
                 {foundingMember.map((member, index) => (
                     <Card
                         key={index}
@@ -133,9 +159,99 @@ const Members = () => {
 
 
 
-            {/* Active Member Section */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {/* Batch-25 */}
+            <h1 className='text-black text-[6rem] font-extrabold text-foreground mb-8 text-center'
+                style={{
+                    textShadow: '0 0 30px rgba(234, 179, 8, 1)',
+                }}>
+                Batch-25</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
                 {Members.map((member, index) => (
+                    <Card
+                        key={index}
+                        className="bg-card-gradient border border-border hover:shadow-glow transition-all duration-300 hover:scale-105 animate-slide-in-right flex flex-col items-center justify-between"
+                        style={{ animationDelay: `${index * 0.1}s`, height: '100%' }}
+                    >
+                        <CardContent className="p-6 text-center flex flex-col items-center justify-center h-full">
+                            <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
+                                <img
+                                    src={member.logo}
+                                    alt={member.name}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
+                        </CardContent>
+                    </Card>
+                ))}
+            </div>
+
+
+
+            {/* Batch-26 */}
+            <h1 className='text-black text-[6rem] font-extrabold text-foreground mb-8 text-center'
+                style={{
+                    textShadow: '0 0 30px rgba(234, 179, 8, 1)',
+                }}>
+                Batch-26</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
+                {batch26.map((member, index) => (
+                    <Card
+                        key={index}
+                        className="bg-card-gradient border border-border hover:shadow-glow transition-all duration-300 hover:scale-105 animate-slide-in-right flex flex-col items-center justify-between"
+                        style={{ animationDelay: `${index * 0.1}s`, height: '100%' }}
+                    >
+                        <CardContent className="p-6 text-center flex flex-col items-center justify-center h-full">
+                            <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
+                                <img
+                                    src={member.logo}
+                                    alt={member.name}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
+                        </CardContent>
+                    </Card>
+                ))}
+            </div>
+
+
+            {/* batch-27 */}
+            <h1 className='text-black text-[6rem] font-extrabold text-foreground mb-8 text-center'
+                style={{
+                    textShadow: '0 0 30px rgba(234, 179, 8, 1)',
+                }}>
+                Batch-27</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
+                {batch27.map((member, index) => (
+                    <Card
+                        key={index}
+                        className="bg-card-gradient border border-border hover:shadow-glow transition-all duration-300 hover:scale-105 animate-slide-in-right flex flex-col items-center justify-between"
+                        style={{ animationDelay: `${index * 0.1}s`, height: '100%' }}
+                    >
+                        <CardContent className="p-6 text-center flex flex-col items-center justify-center h-full">
+                            <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
+                                <img
+                                    src={member.logo}
+                                    alt={member.name}
+                                    className="w-full h-full object-cover"
+                                />
+                            </div>
+                            <h3 className="text-xl font-semibold text-foreground">{member.name}</h3>
+                        </CardContent>
+                    </Card>
+                ))}
+            </div>
+
+
+            {/* batch-28 */}
+            <h1 className='text-black text-[6rem] font-extrabold text-foreground mb-8 text-center'
+                style={{
+                    textShadow: '0 0 30px rgba(234, 179, 8, 1)',
+                }}>
+                Batch-28</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
+                {batch28.map((member, index) => (
                     <Card
                         key={index}
                         className="bg-card-gradient border border-border hover:shadow-glow transition-all duration-300 hover:scale-105 animate-slide-in-right flex flex-col items-center justify-between"
