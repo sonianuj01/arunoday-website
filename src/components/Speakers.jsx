@@ -64,8 +64,8 @@ const Speakers = () => {
           ))}
         </div>
 
-        {/* Become a Sponsor CTA */}
-        <div className="text-center animate-slide-in-left">
+        
+        {/* <div className="text-center animate-slide-in-left">
           <div className="bg-background border border-border rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
               Become Our Member
@@ -82,7 +82,7 @@ const Speakers = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Partnership Benefits */}
         {/* <div className="grid md:grid-cols-3 gap-8 mt-16">

@@ -98,11 +98,18 @@ const Members = () => {
     return (
         <div className="bg-black py-10 px-4 ">
             {/* faculty-section */}
-            <h1 className='text-black text-[6rem] font-extrabold text-foreground mb-8 text-center'
+            <h1
+                className='text-black text-[6rem] font-extrabold text-center mb-8'
                 style={{
-                    textShadow: '0 0 30px rgba(234, 179, 8, 1)',
-                }}>
-                Faculty Incharge</h1>
+                    textShadow: `
+                    0 0 4px rgba(234, 179, 8, 0.9),
+                    0 0 10px rgba(234, 179, 8, 0.6),
+                    0 0 20px rgba(234, 179, 8, 0.3)
+                    `,
+                }}
+                >
+                Faculty Incharge
+            </h1>
             <div className="flex justify-center mb-16">
                 {faculty.map((member, index) => (
                     <Card
@@ -130,11 +137,19 @@ const Members = () => {
 
             
             {/* Founding member section */}
-            <h1 className='text-black text-[6rem] font-extrabold text-foreground mb-8 text-center'
+            <h1
+                className='text-black text-[5rem] font-extrabold text-center mb-8'
                 style={{
-                    textShadow: '0 0 30px rgba(234, 179, 8, 1)',
-                }}>
-                Founding Members</h1>
+                    textShadow: `
+                    0 0 4px rgba(234, 179, 8, 0.9),
+                    0 0 10px rgba(234, 179, 8, 0.6),
+                    0 0 20px rgba(234, 179, 8, 0.3)
+                    `,
+                }}
+                >
+                Founding Members
+            </h1>
+
             <div className="flex flex-wrap justify-center gap-6 mb-16">
                 {foundingMember.map((member, index) => (
                     <Card
@@ -160,11 +175,18 @@ const Members = () => {
 
 
             {/* Batch-25 */}
-            <h1 className='text-black text-[6rem] font-extrabold text-foreground mb-8 text-center'
+            <h1
+                className='text-black text-[4rem] font-extrabold text-center mb-8'
                 style={{
-                    textShadow: '0 0 30px rgba(234, 179, 8, 1)',
-                }}>
-                Batch'25</h1>
+                    textShadow: `
+                    0 0 4px rgba(234, 179, 8, 0.9),
+                    0 0 10px rgba(234, 179, 8, 0.6),
+                    0 0 20px rgba(234, 179, 8, 0.3)
+                    `,
+                }}
+                >
+                Batch'25
+            </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
                 {Members.map((member, index) => (
                     <Card
@@ -189,11 +211,18 @@ const Members = () => {
 
 
             {/* Batch-26 */}
-            <h1 className='text-black text-[6rem] font-extrabold text-foreground mb-8 text-center'
+            <h1
+                className='text-black text-[4rem] font-extrabold text-center mb-8'
                 style={{
-                    textShadow: '0 0 30px rgba(234, 179, 8, 1)',
-                }}>
-                Batch'26</h1>
+                    textShadow: `
+                    0 0 4px rgba(234, 179, 8, 0.9),
+                    0 0 10px rgba(234, 179, 8, 0.6),
+                    0 0 20px rgba(234, 179, 8, 0.3)
+                    `,
+                }}
+                >
+                Batch'26
+            </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
                 {batch26.map((member, index) => (
                     <Card
@@ -217,11 +246,18 @@ const Members = () => {
 
 
             {/* batch-27 */}
-            <h1 className='text-black text-[6rem] font-extrabold text-foreground mb-8 text-center'
+            <h1
+                className='text-black text-[4rem] font-extrabold text-center mb-8'
                 style={{
-                    textShadow: '0 0 30px rgba(234, 179, 8, 1)',
-                }}>
-                Batch'27</h1>
+                    textShadow: `
+                    0 0 4px rgba(234, 179, 8, 0.9),
+                    0 0 10px rgba(234, 179, 8, 0.6),
+                    0 0 20px rgba(234, 179, 8, 0.3)
+                    `,
+                }}
+                >
+                Batch'27
+            </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
                 {batch27.map((member, index) => (
                     <Card
@@ -245,11 +281,18 @@ const Members = () => {
 
 
             {/* batch-28 */}
-            <h1 className='text-black text-[6rem] font-extrabold text-foreground mb-8 text-center'
+            <h1
+                className='text-black text-[4rem] font-extrabold text-center mb-8'
                 style={{
-                    textShadow: '0 0 30px rgba(234, 179, 8, 1)',
-                }}>
-                Batch'28</h1>
+                    textShadow: `
+                    0 0 4px rgba(234, 179, 8, 0.9),
+                    0 0 10px rgba(234, 179, 8, 0.6),
+                    0 0 20px rgba(234, 179, 8, 0.3)
+                    `,
+                }}
+                >
+                Batch'28
+            </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
                 {batch28.map((member, index) => (
                     <Card

@@ -87,7 +87,7 @@ const About = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center mt-16 animate-fade-in">
+        {/* <div className="text-center mt-16 animate-fade-in">
           <div className="bg-card-gradient rounded-2xl p-8 max-w-4xl mx-auto border border-border">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
               Ready to Start Your social Journey?
@@ -104,7 +104,7 @@ const About = () => {
               </button>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Background decoration */}
