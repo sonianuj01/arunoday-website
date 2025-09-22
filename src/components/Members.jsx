@@ -99,7 +99,7 @@ const Members = () => {
         <div className="bg-black py-10 px-4 ">
             {/* faculty-section */}
             <h1
-                className='text-black text-[6rem] font-extrabold text-center mb-8'
+                className='text-black text-[5rem] font-extrabold text-center mb-8'
                 style={{
                     textShadow: `
                     0 0 4px rgba(234, 179, 8, 0.9),
