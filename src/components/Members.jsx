@@ -99,7 +99,7 @@ const Members = () => {
         <div className="bg-black py-10 px-4 ">
             {/* faculty-section */}
             <h1
-                className='text-black text-[5rem] font-extrabold text-center mb-8'
+                className='text-black text-[4rem] font-extrabold text-center mb-8'
                 style={{
                     textShadow: `
                     0 0 4px rgba(234, 179, 8, 0.9),
@@ -138,7 +138,7 @@ const Members = () => {
             
             {/* Founding member section */}
             <h1
-                className='text-black text-[5rem] font-extrabold text-center mb-8'
+                className='text-black text-[4rem] font-extrabold text-center mb-8'
                 style={{
                     textShadow: `
                     0 0 4px rgba(234, 179, 8, 0.9),
@@ -176,7 +176,7 @@ const Members = () => {
 
             {/* Batch-25 */}
             <h1
-                className='text-black text-[4rem] font-extrabold text-center mb-8'
+                className='text-black text-[3rem] font-extrabold text-center mb-8'
                 style={{
                     textShadow: `
                     0 0 4px rgba(234, 179, 8, 0.9),
@@ -212,7 +212,7 @@ const Members = () => {
 
             {/* Batch-26 */}
             <h1
-                className='text-black text-[4rem] font-extrabold text-center mb-8'
+                className='text-black text-[3rem] font-extrabold text-center mb-8'
                 style={{
                     textShadow: `
                     0 0 4px rgba(234, 179, 8, 0.9),
@@ -247,7 +247,7 @@ const Members = () => {
 
             {/* batch-27 */}
             <h1
-                className='text-black text-[4rem] font-extrabold text-center mb-8'
+                className='text-black text-[3rem] font-extrabold text-center mb-8'
                 style={{
                     textShadow: `
                     0 0 4px rgba(234, 179, 8, 0.9),
@@ -282,7 +282,7 @@ const Members = () => {
 
             {/* batch-28 */}
             <h1
-                className='text-black text-[4rem] font-extrabold text-center mb-8'
+                className='text-black text-[3rem] font-extrabold text-center mb-8'
                 style={{
                     textShadow: `
                     0 0 4px rgba(234, 179, 8, 0.9),
