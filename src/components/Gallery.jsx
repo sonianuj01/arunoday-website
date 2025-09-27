@@ -26,7 +26,7 @@ const Gallery = () => {
   ];
 
   return (
-    <section className="py-20 bg-card relative overflow-hidden bg-black ">
+    <section id='gallery' className="py-20 bg-card relative overflow-hidden bg-black ">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">

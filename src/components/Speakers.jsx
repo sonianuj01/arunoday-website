@@ -30,7 +30,7 @@ const Speakers = () => {
   ];
 
   return (
-    <section className="py-20 bg-card relative overflow-hidden bg-black">
+    <section id='speakers' className="py-20 bg-card relative overflow-hidden bg-black">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
@@ -44,7 +44,7 @@ const Speakers = () => {
         </div>
 
         {/* Sponsors Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 mb-16">
           {sponsors.map((sponsor, index) => (
             <div
               key={index}

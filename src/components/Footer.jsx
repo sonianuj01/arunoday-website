@@ -2,13 +2,13 @@ import { Mail, Phone, MapPin, Twitter, Facebook, Instagram, Linkedin, Heart } fr
 import logo from '../assets/logo1.png';
 
 const Footer = () => {
-  const quickLinks = [
-    'About Us',
-    'Events',
-    'Gallery',
-    'Team',
-    'Contact',
-    'Blog'
+  const quickLinks = [ 
+    {label: 'About Us', target: 'about'},
+    {label: 'Events', target: 'events'},
+    {label: 'Gallery', target: 'gallery'},
+    {label: 'Team', target: 'team'},
+    {label: 'Contact', target: 'footer'},
+    {label: 'Speakers', target: 'speakers'}
   ];
 
   const events = [
@@ -29,7 +29,7 @@ const Footer = () => {
 ];
 
   return (
-    <footer className="bg-navy-dark border-t border-border">
+    <footer id='footer' className="bg-navy-dark border-t border-border">
       {/* Main Footer Content */}
       <div className="container mx-auto px-6 py-16">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
@@ -54,13 +54,13 @@ const Footer = () => {
           <div>
             <h3 className="text-foreground font-semibold text-lg mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              {quickLinks.map((link) => (
-                <li key={link}>
+              {quickLinks.map(({label, target}) => (
+                <li key={label}>
                   <a 
-                    href="#" 
+                    href={`#${target}`}
                     className="text-muted-foreground hover:text-gold transition-colors duration-300"
                   >
-                    {link}
+                    {label}
                   </a>
                 </li>
               ))}
